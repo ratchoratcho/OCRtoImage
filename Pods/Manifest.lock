@@ -1,0 +1,20 @@
+PODS:
+  - SwiftyJSON (3.1.4)
+  - TesseractOCRiOS (4.0.0)
+
+DEPENDENCIES:
+  - SwiftyJSON (~> 3.1)
+  - TesseractOCRiOS (= 4.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftyJSON
+    - TesseractOCRiOS
+
+SPEC CHECKSUMS:
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  TesseractOCRiOS: 90638afbe43d082433f2e76b384c7901d23956df
+
+PODFILE CHECKSUM: 1d88fb4e155ff83e7b76782ead9634e560a9d859
+
+COCOAPODS: 1.5.3

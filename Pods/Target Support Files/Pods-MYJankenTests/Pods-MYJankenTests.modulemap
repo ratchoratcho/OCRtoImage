@@ -1,0 +1,6 @@
+framework module Pods_MYJankenTests {
+  umbrella header "Pods-MYJankenTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

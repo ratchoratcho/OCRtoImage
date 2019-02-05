@@ -1,0 +1,764 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B5DD19B1CD02E69AB9C033F /* Pods_MYJanken.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFB274858B2245CC0F7B4CC /* Pods_MYJanken.framework */; };
+		8863ADF7B6856623542645DE /* Pods_MYJankenUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830AD482D3C947377136F373 /* Pods_MYJankenUITests.framework */; };
+		8BDC41DFB1371DAA6F6A36C3 /* Pods_MYJankenTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F02DEE7EC1E1C1C398F28DC8 /* Pods_MYJankenTests.framework */; };
+		F0B285752201A42800EC2F5F /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = F0B285742201A42800EC2F5F /* tessdata */; };
+		F0DE0608220325E400F30F15 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DE0607220325E400F30F15 /* test.png */; };
+		F0DE060A220330BE00F30F15 /* NodeAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE0609220330BE00F30F15 /* NodeAdder.swift */; };
+		F0DE060C2204453500F30F15 /* GCPVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE060B2204453500F30F15 /* GCPVision.swift */; };
+		F0FE5A262201608E004C6044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FE5A252201608E004C6044 /* AppDelegate.swift */; };
+		F0FE5A282201608E004C6044 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FE5A272201608E004C6044 /* ViewController.swift */; };
+		F0FE5A2B2201608E004C6044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0FE5A292201608E004C6044 /* Main.storyboard */; };
+		F0FE5A2D22016093004C6044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0FE5A2C22016093004C6044 /* Assets.xcassets */; };
+		F0FE5A3022016093004C6044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0FE5A2E22016093004C6044 /* LaunchScreen.storyboard */; };
+		F0FE5A3B22016093004C6044 /* MYJankenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FE5A3A22016093004C6044 /* MYJankenTests.swift */; };
+		F0FE5A4622016093004C6044 /* MYJankenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FE5A4522016093004C6044 /* MYJankenUITests.swift */; };
+		F0FE5A5422016BA5004C6044 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FE5A5322016BA5004C6044 /* Utilities.swift */; };
+		F0FE5A5622017655004C6044 /* BoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FE5A5522017655004C6044 /* BoxService.swift */; };
+		F0FE5A5822019AD6004C6044 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FE5A5722019AD6004C6044 /* OCRService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0FE5A3722016093004C6044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0FE5A1A2201608E004C6044 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0FE5A212201608E004C6044;
+			remoteInfo = MYJanken;
+		};
+		F0FE5A4222016093004C6044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0FE5A1A2201608E004C6044 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0FE5A212201608E004C6044;
+			remoteInfo = MYJanken;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01252EE37E771CF55DEE789D /* Pods-MYJanken.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYJanken.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYJanken/Pods-MYJanken.release.xcconfig"; sourceTree = "<group>"; };
+		2286280CB435CC4F80ADBC1F /* Pods-MYJankenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYJankenTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MYJankenTests/Pods-MYJankenTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B9D1BD8902CF04A4F9F3E06 /* Pods-MYJankenUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYJankenUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYJankenUITests/Pods-MYJankenUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5DFB274858B2245CC0F7B4CC /* Pods_MYJanken.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MYJanken.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		830AD482D3C947377136F373 /* Pods_MYJankenUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MYJankenUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AB3284B31982A9C5C30FAA7 /* Pods-MYJankenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYJankenTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYJankenTests/Pods-MYJankenTests.release.xcconfig"; sourceTree = "<group>"; };
+		8B3A7B92D37F84E3E1450185 /* Pods-MYJankenUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYJankenUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MYJankenUITests/Pods-MYJankenUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB2F193525067591D78A4F26 /* Pods-MYJanken.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYJanken.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MYJanken/Pods-MYJanken.debug.xcconfig"; sourceTree = "<group>"; };
+		F02DEE7EC1E1C1C398F28DC8 /* Pods_MYJankenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MYJankenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0B285742201A42800EC2F5F /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		F0DE0607220325E400F30F15 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		F0DE0609220330BE00F30F15 /* NodeAdder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeAdder.swift; sourceTree = "<group>"; };
+		F0DE060B2204453500F30F15 /* GCPVision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCPVision.swift; sourceTree = "<group>"; };
+		F0FE5A222201608E004C6044 /* MYJanken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYJanken.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0FE5A252201608E004C6044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0FE5A272201608E004C6044 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0FE5A2A2201608E004C6044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0FE5A2C22016093004C6044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0FE5A2F22016093004C6044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0FE5A3122016093004C6044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0FE5A3622016093004C6044 /* MYJankenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYJankenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0FE5A3A22016093004C6044 /* MYJankenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYJankenTests.swift; sourceTree = "<group>"; };
+		F0FE5A3C22016093004C6044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0FE5A4122016093004C6044 /* MYJankenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYJankenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0FE5A4522016093004C6044 /* MYJankenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYJankenUITests.swift; sourceTree = "<group>"; };
+		F0FE5A4722016093004C6044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0FE5A5322016BA5004C6044 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		F0FE5A5522017655004C6044 /* BoxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxService.swift; sourceTree = "<group>"; };
+		F0FE5A5722019AD6004C6044 /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0FE5A1F2201608E004C6044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5DD19B1CD02E69AB9C033F /* Pods_MYJanken.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FE5A3322016093004C6044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BDC41DFB1371DAA6F6A36C3 /* Pods_MYJankenTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FE5A3E22016093004C6044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8863ADF7B6856623542645DE /* Pods_MYJankenUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E3D76CE240A1408AE2D05A34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB2F193525067591D78A4F26 /* Pods-MYJanken.debug.xcconfig */,
+				01252EE37E771CF55DEE789D /* Pods-MYJanken.release.xcconfig */,
+				2286280CB435CC4F80ADBC1F /* Pods-MYJankenTests.debug.xcconfig */,
+				8AB3284B31982A9C5C30FAA7 /* Pods-MYJankenTests.release.xcconfig */,
+				8B3A7B92D37F84E3E1450185 /* Pods-MYJankenUITests.debug.xcconfig */,
+				5B9D1BD8902CF04A4F9F3E06 /* Pods-MYJankenUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EAE29A24156AEF866F0475C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DFB274858B2245CC0F7B4CC /* Pods_MYJanken.framework */,
+				F02DEE7EC1E1C1C398F28DC8 /* Pods_MYJankenTests.framework */,
+				830AD482D3C947377136F373 /* Pods_MYJankenUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0FE5A192201608E004C6044 = {
+			isa = PBXGroup;
+			children = (
+				F0FE5A242201608E004C6044 /* MYJanken */,
+				F0FE5A3922016093004C6044 /* MYJankenTests */,
+				F0FE5A4422016093004C6044 /* MYJankenUITests */,
+				F0FE5A232201608E004C6044 /* Products */,
+				E3D76CE240A1408AE2D05A34 /* Pods */,
+				EAE29A24156AEF866F0475C0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F0FE5A232201608E004C6044 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0FE5A222201608E004C6044 /* MYJanken.app */,
+				F0FE5A3622016093004C6044 /* MYJankenTests.xctest */,
+				F0FE5A4122016093004C6044 /* MYJankenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0FE5A242201608E004C6044 /* MYJanken */ = {
+			isa = PBXGroup;
+			children = (
+				F0B285742201A42800EC2F5F /* tessdata */,
+				F0FE5A252201608E004C6044 /* AppDelegate.swift */,
+				F0FE5A272201608E004C6044 /* ViewController.swift */,
+				F0FE5A292201608E004C6044 /* Main.storyboard */,
+				F0FE5A2C22016093004C6044 /* Assets.xcassets */,
+				F0DE0607220325E400F30F15 /* test.png */,
+				F0FE5A2E22016093004C6044 /* LaunchScreen.storyboard */,
+				F0FE5A3122016093004C6044 /* Info.plist */,
+				F0FE5A5322016BA5004C6044 /* Utilities.swift */,
+				F0FE5A5522017655004C6044 /* BoxService.swift */,
+				F0FE5A5722019AD6004C6044 /* OCRService.swift */,
+				F0DE0609220330BE00F30F15 /* NodeAdder.swift */,
+				F0DE060B2204453500F30F15 /* GCPVision.swift */,
+			);
+			path = MYJanken;
+			sourceTree = "<group>";
+		};
+		F0FE5A3922016093004C6044 /* MYJankenTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0FE5A3A22016093004C6044 /* MYJankenTests.swift */,
+				F0FE5A3C22016093004C6044 /* Info.plist */,
+			);
+			path = MYJankenTests;
+			sourceTree = "<group>";
+		};
+		F0FE5A4422016093004C6044 /* MYJankenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F0FE5A4522016093004C6044 /* MYJankenUITests.swift */,
+				F0FE5A4722016093004C6044 /* Info.plist */,
+			);
+			path = MYJankenUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0FE5A212201608E004C6044 /* MYJanken */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0FE5A4A22016093004C6044 /* Build configuration list for PBXNativeTarget "MYJanken" */;
+			buildPhases = (
+				D77BF073A76368F6914AE4E5 /* [CP] Check Pods Manifest.lock */,
+				F0FE5A1E2201608E004C6044 /* Sources */,
+				F0FE5A1F2201608E004C6044 /* Frameworks */,
+				F0FE5A202201608E004C6044 /* Resources */,
+				226B2A0591EEEC0A8D4C5A51 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MYJanken;
+			productName = MYJanken;
+			productReference = F0FE5A222201608E004C6044 /* MYJanken.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0FE5A3522016093004C6044 /* MYJankenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0FE5A4D22016093004C6044 /* Build configuration list for PBXNativeTarget "MYJankenTests" */;
+			buildPhases = (
+				D3A318A4203E9C283B528A63 /* [CP] Check Pods Manifest.lock */,
+				F0FE5A3222016093004C6044 /* Sources */,
+				F0FE5A3322016093004C6044 /* Frameworks */,
+				F0FE5A3422016093004C6044 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0FE5A3822016093004C6044 /* PBXTargetDependency */,
+			);
+			name = MYJankenTests;
+			productName = MYJankenTests;
+			productReference = F0FE5A3622016093004C6044 /* MYJankenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F0FE5A4022016093004C6044 /* MYJankenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0FE5A5022016093004C6044 /* Build configuration list for PBXNativeTarget "MYJankenUITests" */;
+			buildPhases = (
+				B679E6DE5449411200480645 /* [CP] Check Pods Manifest.lock */,
+				F0FE5A3D22016093004C6044 /* Sources */,
+				F0FE5A3E22016093004C6044 /* Frameworks */,
+				F0FE5A3F22016093004C6044 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0FE5A4322016093004C6044 /* PBXTargetDependency */,
+			);
+			name = MYJankenUITests;
+			productName = MYJankenUITests;
+			productReference = F0FE5A4122016093004C6044 /* MYJankenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0FE5A1A2201608E004C6044 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "杉浦光紀";
+				TargetAttributes = {
+					F0FE5A212201608E004C6044 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F0FE5A3522016093004C6044 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F0FE5A212201608E004C6044;
+					};
+					F0FE5A4022016093004C6044 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F0FE5A212201608E004C6044;
+					};
+				};
+			};
+			buildConfigurationList = F0FE5A1D2201608E004C6044 /* Build configuration list for PBXProject "MYJanken" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0FE5A192201608E004C6044;
+			productRefGroup = F0FE5A232201608E004C6044 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0FE5A212201608E004C6044 /* MYJanken */,
+				F0FE5A3522016093004C6044 /* MYJankenTests */,
+				F0FE5A4022016093004C6044 /* MYJankenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0FE5A202201608E004C6044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0FE5A3022016093004C6044 /* LaunchScreen.storyboard in Resources */,
+				F0DE0608220325E400F30F15 /* test.png in Resources */,
+				F0B285752201A42800EC2F5F /* tessdata in Resources */,
+				F0FE5A2D22016093004C6044 /* Assets.xcassets in Resources */,
+				F0FE5A2B2201608E004C6044 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FE5A3422016093004C6044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FE5A3F22016093004C6044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		226B2A0591EEEC0A8D4C5A51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MYJanken/Pods-MYJanken-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MYJanken/Pods-MYJanken-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B679E6DE5449411200480645 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MYJankenUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3A318A4203E9C283B528A63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MYJankenTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D77BF073A76368F6914AE4E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MYJanken-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0FE5A1E2201608E004C6044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0FE5A5822019AD6004C6044 /* OCRService.swift in Sources */,
+				F0FE5A5422016BA5004C6044 /* Utilities.swift in Sources */,
+				F0DE060A220330BE00F30F15 /* NodeAdder.swift in Sources */,
+				F0DE060C2204453500F30F15 /* GCPVision.swift in Sources */,
+				F0FE5A5622017655004C6044 /* BoxService.swift in Sources */,
+				F0FE5A282201608E004C6044 /* ViewController.swift in Sources */,
+				F0FE5A262201608E004C6044 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FE5A3222016093004C6044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0FE5A3B22016093004C6044 /* MYJankenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FE5A3D22016093004C6044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0FE5A4622016093004C6044 /* MYJankenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0FE5A3822016093004C6044 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0FE5A212201608E004C6044 /* MYJanken */;
+			targetProxy = F0FE5A3722016093004C6044 /* PBXContainerItemProxy */;
+		};
+		F0FE5A4322016093004C6044 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0FE5A212201608E004C6044 /* MYJanken */;
+			targetProxy = F0FE5A4222016093004C6044 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0FE5A292201608E004C6044 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0FE5A2A2201608E004C6044 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0FE5A2E22016093004C6044 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0FE5A2F22016093004C6044 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0FE5A4822016093004C6044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0FE5A4922016093004C6044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0FE5A4B22016093004C6044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB2F193525067591D78A4F26 /* Pods-MYJanken.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6HZJ2M44Q2;
+				INFOPLIST_FILE = MYJanken/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.MYJanken;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0FE5A4C22016093004C6044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01252EE37E771CF55DEE789D /* Pods-MYJanken.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6HZJ2M44Q2;
+				INFOPLIST_FILE = MYJanken/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.MYJanken;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F0FE5A4E22016093004C6044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2286280CB435CC4F80ADBC1F /* Pods-MYJankenTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6HZJ2M44Q2;
+				INFOPLIST_FILE = MYJankenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.MYJankenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MYJanken.app/MYJanken";
+			};
+			name = Debug;
+		};
+		F0FE5A4F22016093004C6044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AB3284B31982A9C5C30FAA7 /* Pods-MYJankenTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6HZJ2M44Q2;
+				INFOPLIST_FILE = MYJankenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.MYJankenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MYJanken.app/MYJanken";
+			};
+			name = Release;
+		};
+		F0FE5A5122016093004C6044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B3A7B92D37F84E3E1450185 /* Pods-MYJankenUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6HZJ2M44Q2;
+				INFOPLIST_FILE = MYJankenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.MYJankenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MYJanken;
+			};
+			name = Debug;
+		};
+		F0FE5A5222016093004C6044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B9D1BD8902CF04A4F9F3E06 /* Pods-MYJankenUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6HZJ2M44Q2;
+				INFOPLIST_FILE = MYJankenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.MYJankenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MYJanken;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0FE5A1D2201608E004C6044 /* Build configuration list for PBXProject "MYJanken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0FE5A4822016093004C6044 /* Debug */,
+				F0FE5A4922016093004C6044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0FE5A4A22016093004C6044 /* Build configuration list for PBXNativeTarget "MYJanken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0FE5A4B22016093004C6044 /* Debug */,
+				F0FE5A4C22016093004C6044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0FE5A4D22016093004C6044 /* Build configuration list for PBXNativeTarget "MYJankenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0FE5A4E22016093004C6044 /* Debug */,
+				F0FE5A4F22016093004C6044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0FE5A5022016093004C6044 /* Build configuration list for PBXNativeTarget "MYJankenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0FE5A5122016093004C6044 /* Debug */,
+				F0FE5A5222016093004C6044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0FE5A1A2201608E004C6044 /* Project object */;
+}

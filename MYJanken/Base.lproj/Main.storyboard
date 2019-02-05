@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MYJanken" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ZW-4d-r6T">
+                                <rect key="frame" x="0.0" y="220" width="375" height="447"/>
+                            </arscnView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ここに認識した文字が表示される" translatesAutoresizingMaskIntoConstraints="NO" id="c12-Mr-ddf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Hec-mb-HtF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eF-DS-Mca">
+                                <rect key="frame" x="162.5" y="597" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="GZf-Zb-RHT"/>
+                                    <constraint firstAttribute="height" constant="50" id="yAC-qM-2D7"/>
+                                </constraints>
+                                <state key="normal" image="test.png"/>
+                                <connections>
+                                    <action selector="shutterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MJf-O0-7Zl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c12-Mr-ddf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="5rS-jr-1Z0"/>
+                            <constraint firstItem="c12-Mr-ddf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Kzd-Ol-MXK"/>
+                            <constraint firstItem="1eF-DS-Mca" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LG5-GI-8S3"/>
+                            <constraint firstItem="8ZW-4d-r6T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LeR-Ml-DvB"/>
+                            <constraint firstItem="8ZW-4d-r6T" firstAttribute="top" secondItem="c12-Mr-ddf" secondAttribute="bottom" id="STY-pe-BQ5"/>
+                            <constraint firstItem="c12-Mr-ddf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bht-z4-KK5"/>
+                            <constraint firstItem="8ZW-4d-r6T" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hfc-Mc-oUv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1eF-DS-Mca" secondAttribute="bottom" constant="20" id="pmD-HN-TQW"/>
+                            <constraint firstItem="8ZW-4d-r6T" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sdk-nl-XI7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="detectMessage" destination="c12-Mr-ddf" id="wfa-VU-Z9i"/>
+                        <outlet property="sceneView" destination="8ZW-4d-r6T" id="ziR-Ew-fqa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="test.png" width="78" height="72"/>
+    </resources>
+</document>
