@@ -97,8 +97,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, ARSCNViewDe
     var count: Int = 0
     
     func getImage(query: String, x: Float, y: Float, z: Float) {
-        let apiKey: String = "AIzaSyAqyEhamuF3xH350zk8xKloMsLYyMgv_Y4"
-        let cx: String = "015341161562259194270:y6bxbbsb1ao"
+        let apiKey: String = "my secret api key"
+        let cx: String = "my secret cx"
         var urlComponents = URLComponents(string: "https://www.googleapis.com/customsearch/v1")!
         urlComponents.queryItems = [
             URLQueryItem(name: "searchType", value: "image"),
